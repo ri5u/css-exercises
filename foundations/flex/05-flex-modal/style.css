@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+*{
+  /* outline: 2px solid red; */
+}
 html, body {
   height: 100%;
+  
 }
 
 body {
@@ -13,6 +17,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .modal {
@@ -66,4 +71,43 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+
+/*solution*/
+
+.modal{
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.text {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.continue{
+  margin: 5px;
+}
+
+.cancel{
+  padding: 7px 14px;
+}
+
+.icon{
+  flex-shrink: 0;
 }
